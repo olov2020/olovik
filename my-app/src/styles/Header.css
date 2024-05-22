@@ -1,0 +1,26 @@
+.header {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__text {
+    color: white;
+    font-size: 24px;
+}
+
+.header__text:hover {
+    color: #E9EB91;
+}
+
+.header__logo {
+    width: 180px;
+    height: 200px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-size: contain;
+    -webkit-background-size: contain;
+}
