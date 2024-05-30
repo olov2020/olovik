@@ -1,2 +1,2 @@
 # olovik
-My personal project
+My personal repository for all small pet-projects
