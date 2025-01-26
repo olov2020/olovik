@@ -1,0 +1,13 @@
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    background: transparent;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 3px;
+    border-radius: .5rem;
+    background: #185c16;
+    width: 0;
+}

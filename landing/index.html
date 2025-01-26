@@ -2,9 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>olovik</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="typingEffect.css">
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>
 </head>
 <body>
+<header>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
 
+    <nav>
+        <a href="#olovik"><h2>olovik</h2></a>
+        <a href="#portfolio"><h2>Portfolio</h2></a>
+        <a href="#contacts"><h2>Contacts</h2></a>
+    </nav>
+</header>
+
+<main>
+    <article id="olovik">
+        <div class="typewriter">
+            <h1>olovik</h1>
+        </div>
+
+        <section>
+            <p>My name is <a href="https://t.me/olovik">Vladimir Vinogradov</a>, I'm a student of HSE SE
+                '26.</p>
+            <p>I'm a frontend developer of landing pages and web-applications on React and JS. Moreover, I have
+                experience in
+                developing React Native and Python apps.</p>
+        </section>
+    </article>
+
+    <article id="portfolio">
+        <div class="typewriter">
+            <h1>My experience and applications</h1>
+        </div>
+
+        <section>
+            <ul>
+                <li>Web-application for EMSCH in Faculty of Economics MSU - <a href="https://emsch.ru/">emsch.ru</a>
+                </li>
+                <li>Desktop application <a href="https://github.com/olov2020/ivr_text">"Information system for teaching
+                    the basics of cryptographic information protection"</a> for Moscow school of programmers
+                </li>
+                <li>Landing for Tifestadance studio - <a href="https://tifestadance.ru/">tifestadance.ru</a></li>
+            </ul>
+        </section>
+    </article>
+</main>
+
+<footer>
+    <article id="contacts" class="contacts">
+        <div class="typewriterContacts">
+            <h1>Ways to contact me</h1>
+        </div>
+
+        <section>
+            <ul>
+                <li>Telegram: <a href="https://t.me/olovik" class="waysToContact">olovik</a></li>
+                <li>Telegram channel: <a href="https://t.me/olovik_channel" class="waysToContact">olovik & co</a></li>
+                <li>Email: <a href="mailto:vladimir.8624@mail.ru" class="waysToContact">vladimir.8624@mail.ru</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Or just fill the form to order unique site</h2>
+
+            <form>
+                <label>
+                    <span>Email<span style="color: #ff3434">*</span></span>
+                    <input type="email"/>
+                </label>
+                <label>
+                    <span>Message<span style="color: #ff3434">*</span></span>
+                    <textarea></textarea>
+                </label>
+            </form>
+        </section>
+    </article>
+</footer>
+
+<script type="text/javascript" src="progress.js"></script>
+<script type="text/javascript" src="scrollingPageEffects.js"></script>
 </body>
 </html>
