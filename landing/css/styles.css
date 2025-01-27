@@ -1,0 +1,53 @@
+.waysToContact {
+    color: #a7eda8;
+    text-decoration-color: #a7eda8;
+}
+
+.active {
+    color: #185c16;
+}
+
+.fireContainer {
+    width: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > img {
+        width: 100%;
+        object-fit: contain;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+}
+
+.fireCounter {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+
+    text-align: center;
+    background-color: #ff937c;
+    color: white;
+    border-radius: 50%;
+    padding: .2rem;
+}
+
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    display: none;
+    visibility: hidden;
+
+    width: 100vw;
+    height: 100vh;
+
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1em;
+    z-index: 1000;
+}

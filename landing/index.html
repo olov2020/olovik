@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>olovik</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="typingEffect.css">
-    <link rel="stylesheet" href="showingEffects.css">
-    <link rel="stylesheet" href="scrollbar.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/typingEffect.css">
+    <link rel="stylesheet" href="css/showingEffects.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
     </style>
@@ -37,6 +37,15 @@
             <p>I'm a frontend developer of landing pages and web-applications on React and JS. Moreover, I have
                 experience in
                 developing React Native and Python apps.</p>
+        </section>
+
+        <section style="align-items: center; position: relative">
+            <div class="fireContainer">
+                <img alt="Fire" src="images/fire.svg" id="fireImage"/>
+            </div>
+
+            <h3 id="textToLight">Light it up!</h3>
+            <p id="fireCounter" class="fireCounter">Loading...</p>
         </section>
     </article>
 
@@ -75,13 +84,21 @@
             </ul>
         </section>
 
-        <!--<section>
+        <section>
             <h2>Or just fill the form to order unique site</h2>
 
             <form id="contactForm">
                 <label>
+                    <span>Name<span style="color: #ff3434">*</span></span>
+                    <input type="text" name="name" required/>
+                </label>
+                <label>
                     <span>Email<span style="color: #ff3434">*</span></span>
                     <input type="email" name="email" required/>
+                </label>
+                <label>
+                    <span>Telegram</span>
+                    <input type="text" name="telegram"/>
                 </label>
                 <label>
                     <span>Message<span style="color: #ff3434">*</span></span>
@@ -90,13 +107,22 @@
 
                 <button type="submit">Submit</button>
             </form>
-        </section>-->
+
+            <div id="loading">
+                <h3>Loading...</h3>
+            </div>
+        </section>
     </article>
 </footer>
 
-<script type="text/javascript" src="progress.js"></script>
-<script type="text/javascript" src="scrollingPageEffects.js"></script>
-<script type="text/javascript" src="lightUpHeaders.js"></script>
-<script type="text/javascript" src="collectDataFromSite.js"></script>
+<script type="text/javascript" src="js/progress.js"></script>
+<script type="text/javascript" src="js/scrollingPageEffects.js"></script>
+<script type="text/javascript" src="js/lightUpHeaders.js"></script>
+<script type="text/javascript" src="js/fireCount.js"></script>
+<script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+></script>
+<script type="text/javascript" src="js/collectDataFromSite.js"></script>
 </body>
 </html>
