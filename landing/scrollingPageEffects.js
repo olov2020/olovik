@@ -76,3 +76,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// showing effects
+document.addEventListener('DOMContentLoaded', () => {
+  const sectionElements = document.querySelectorAll('section');
+
+  const options = {
+    root: null, // Use the viewport as the root
+    rootMargin: '0px',
+    threshold: 0.5 // Trigger when 50% of the element is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('showEffect');
+      } else {
+        entry.target.classList.remove('showEffect');
+      }
+    });
+  }, options);
+
+  sectionElements.forEach(element => {
+    observer.observe(element);
+  });
+});
+
