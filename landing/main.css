@@ -6,6 +6,7 @@
     font-family: "Roboto Mono", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    font-size: 1.5rem;
 }
 
 body {
@@ -99,7 +100,7 @@ nav {
         transition: all .2s;
 
         &:hover {
-            color: #185c16;
+            color: #a7eda8;
         }
     }
 }
@@ -127,6 +128,10 @@ section {
     gap: 1rem 0;
 }
 
+ul {
+    padding: 0 1rem;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -149,6 +154,7 @@ form {
 input, textarea {
     border-radius: 1rem;
     padding: .5rem;
+    border: none;
 
     &:focus {
         border-color: #a7eda8;
@@ -163,4 +169,25 @@ textarea {
 
 footer {
     color: white;
+}
+
+button {
+    border-radius: 1rem;
+    border: none;
+    background-color: #a7eda8;
+    color: black;
+    padding: .5rem 0;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    transition: all .2s;
+
+    &:hover, &:focus {
+        cursor: pointer;
+
+        background-color: #185c16;
+        color: white;
+        box-shadow: 5px 5px 10px black;
+    }
 }

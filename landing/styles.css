@@ -2,3 +2,7 @@
     color: #a7eda8;
     text-decoration-color: #a7eda8;
 }
+
+.active {
+    color: #185c16;
+}

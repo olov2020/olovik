@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // changing background color while scrolling
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
   const contactsSection = document.querySelector('.contacts');
 
@@ -51,3 +50,29 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', changeBackgroundOnScroll);
   changeBackgroundOnScroll(); // Initial check
 });
+
+// typing effects whenever content appears on the screen
+document.addEventListener('DOMContentLoaded', () => {
+  const typewriterElements = document.querySelectorAll('.typewriter');
+
+  const options = {
+    root: null, // Use the viewport as the root
+    rootMargin: '0px',
+    threshold: 0.5 // Trigger when 50% of the element is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('typewriter');
+      } else {
+        entry.target.classList.remove('typewriter');
+      }
+    });
+  }, options);
+
+  typewriterElements.forEach(element => {
+    observer.observe(element);
+  });
+});
+

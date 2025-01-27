@@ -18,9 +18,9 @@
     </div>
 
     <nav>
-        <a href="#olovik"><h2>olovik</h2></a>
-        <a href="#portfolio"><h2>Portfolio</h2></a>
-        <a href="#contacts"><h2>Contacts</h2></a>
+        <a href="#olovik"><h2 id="olovikHeader">olovik</h2></a>
+        <a href="#portfolio"><h2 id="portfolioHeader">Portfolio</h2></a>
+        <a href="#contacts"><h2 id="contactsHeader">Contacts</h2></a>
     </nav>
 </header>
 
@@ -52,15 +52,18 @@
                     the basics of cryptographic information protection"</a> for Moscow school of programmers
                 </li>
                 <li>Landing for Tifestadance studio - <a href="https://tifestadance.ru/">tifestadance.ru</a></li>
+                <li>Adaptive layout for [FBM] PAY - <a href="https://fbm-pay.com/eng">fbm-pay.com</a></li>
             </ul>
+
+            <h3 style="text-align: center">My github - <a href="https://github.com/olov2020">olov2020</a></h3>
         </section>
     </article>
 </main>
 
 <footer>
     <article id="contacts" class="contacts">
-        <div class="typewriterContacts">
-            <h1>Ways to contact me</h1>
+        <div class="typewriter">
+            <h1 style="border-color: #a7eda8 !important;">Ways to contact me</h1>
         </div>
 
         <section>
@@ -74,15 +77,17 @@
         <section>
             <h2>Or just fill the form to order unique site</h2>
 
-            <form>
+            <form id="contactForm">
                 <label>
                     <span>Email<span style="color: #ff3434">*</span></span>
-                    <input type="email"/>
+                    <input type="email" name="email" required/>
                 </label>
                 <label>
                     <span>Message<span style="color: #ff3434">*</span></span>
-                    <textarea></textarea>
+                    <textarea name="message" required></textarea>
                 </label>
+
+                <button type="submit">Submit</button>
             </form>
         </section>
     </article>
@@ -90,5 +95,7 @@
 
 <script type="text/javascript" src="progress.js"></script>
 <script type="text/javascript" src="scrollingPageEffects.js"></script>
+<script type="text/javascript" src="lightUpHeaders.js"></script>
+<script type="text/javascript" src="collectDataFromSite.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 .typewriter h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid #185c16; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
+    white-space: wrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15rem; /* Adjust as needed */
     animation:
@@ -19,20 +19,4 @@
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #185c16; }
-}
-
-.typewriterContacts h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #a7eda8; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15rem; /* Adjust as needed */
-    animation:
-        typing 1s steps(10, end),
-        blink-caret-contacts .75s step-end infinite;
-}
-
-@keyframes blink-caret-contacts {
-    from, to { border-color: transparent }
-    50% { border-color: #a7eda8; }
 }
