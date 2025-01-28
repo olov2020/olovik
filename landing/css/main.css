@@ -87,10 +87,10 @@ header {
 }
 
 nav {
+    width: 95%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 0 2rem;
 
     > a {
         color: inherit;
