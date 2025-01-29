@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
       let opacity = 0;
       const centerPoint = halfWindowHeight - halfContentHeight;
       const distanceFromCenter = Math.abs(contentPosition + halfContentHeight - halfWindowHeight);
-      const maxDistance = Math.max(halfWindowHeight, halfContentHeight);
+      // const maxDistance = Math.max(halfWindowHeight, halfContentHeight);
+      const maxDistance = contentHeight / 8 * 7;
 
       if (distanceFromCenter <= maxDistance) {
         opacity = 1 - (distanceFromCenter / maxDistance);
