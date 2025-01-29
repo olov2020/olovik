@@ -1,4 +1,6 @@
 .typewriter h1 {
+    position: sticky;
+    top: 5rem;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid #185c16; /* The typwriter cursor */
     white-space: wrap; /* Keeps the content on a single line */

@@ -51,3 +51,11 @@
     padding: 1em;
     z-index: 1000;
 }
+
+#portfolio section {
+    width: 100%;
+
+    > h2 {
+        text-align: center;
+    }
+}
